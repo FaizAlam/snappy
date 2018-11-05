@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Snappy webpage</title>
+    <style>
+        body{
+            padding: 0px;
+            margin:0px;
+            width:100%;
+            scroll-snap-type: x mandatory;
+            overflow-x:scroll; 
+            overflow-y: hidden;
+
+        }
+        section{
+          
+           
+            display: grid;
+            grid-template-columns: repeat(3,100%);
+        }
+        .one,.two,.three{
+            scroll-snap-align:start;
+        }
+        .one{
+            height:50vw;
+            width:100vw;
+            background: rgb(255, 115, 115);
+        }
+        .two{
+            height:50vw;
+            width:100vw;
+            background: rgb(129, 51, 255);
+        }
+        .three{
+            height:50vw;
+            width:100vw;
+            background: rgb(255, 115, 220);
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div> 
+    </section>
+
+</body>
+</html>
